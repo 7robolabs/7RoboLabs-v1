@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.roboticsDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    background-color: #02142C;
+    color: white;
+    background-image:
+        url('../../../public/images/image2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .roboticsDescription {
+        display: flex;
+        flex-direction: column;
+        .mainHeader {
+            font-size: 21px;
+            font-weight: bold;
+        }
+        .subHeader {
+            font-style: italic;
+            font-size: 18px;
+        }
+    }
+}
+
+.roboticsDescriptionContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.roboticsDescriptionContainer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.roboticsDescriptionContainer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .roboticsDescriptionContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .roboticsDescriptionContainer div {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .roboticsDescriptionContainer img {
+        flex: 1;
+        max-width: 50%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .roboticsDescriptionContainer {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .roboticsDescriptionContainer img {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,123 @@
+/* NavItem.styles.scss */
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #d3d3d3;
+}
+
+.logoContainer {
+    flex: 0 0 auto;
+    background-color: black;
+}
+
+.logoImage {
+    height: 50px;
+    width: auto;
+}
+
+.menuIconContainer {
+    display: none;
+    cursor: pointer;
+}
+
+.menuIcon {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navItemsContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.navItemLink {
+    text-decoration: none;
+}
+
+.navItem {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navItem:hover {
+    color: #007bff;
+}
+
+/* Overlay Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transform: translateX(100%);
+    animation: slideIn 0.3s forwards;
+}
+
+.overlayHeader {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.overlayNavItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.overlayNavItemLink {
+    text-decoration: none;
+}
+
+.overlayNavItem {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.overlayNavItem:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navItemsContainer {
+        display: none;
+    }
+
+    .menuIconContainer {
+        display: block;
+    }
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

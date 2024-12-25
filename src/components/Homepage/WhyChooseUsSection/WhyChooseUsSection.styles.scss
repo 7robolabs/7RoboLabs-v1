@@ -1,0 +1,90 @@
+.whyChooseUsSection {
+    background-color: #02132c;
+    color: white;
+    background-image: url("../../../../public/images/image2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .imageSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .mainImage {
+            img {
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+    }
+
+    .textSection {
+        text-align: left;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        .sectionTitle {
+            font-size: 20px;
+            color: #2be0f7;
+        }
+
+        .mainHeading {
+            font-size: 26px;
+            margin: 20px 0;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .featuresList {
+            .featureItem {
+                display: flex;
+                align-items: center;
+
+                .featureIcon {
+                    width: 60px;
+                }
+
+                .featureText {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .whyChooseUsSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .textSection {
+            text-align: center;
+
+            .mainHeading {
+                font-size: 24px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .featuresList {
+                .featureItem {
+                    justify-content: center;
+
+                    .featureText {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
