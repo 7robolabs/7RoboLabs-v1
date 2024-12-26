@@ -20,7 +20,7 @@ export const SHARE_HOLDERS = [
   {
     id: 4,
     name: "KIRAN KUMAR MEDIKURTHY",
-    role: "Engineering Manager",
+    role: "Vice President",
     linkedin: "https://www.linkedin.com/in/kirankumar-medikurthy/",
   },
 ];
