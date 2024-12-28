@@ -22,9 +22,10 @@ body {
     background-color: #02142C;
     color: white;
     background-image:
-        url('../../../public/images/image2.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+        url('../../../public/images/image2.png'), url("../../../public/images/image1.png");
+    background-position: top left, bottom left;
+    background-repeat: no-repeat, no-repeat; ;
+    background-size: 350px, 540px;
     font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 

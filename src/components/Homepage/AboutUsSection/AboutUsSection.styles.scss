@@ -13,10 +13,17 @@
         gap: 20px;
         width: 50%;
 
+        .image-section-1, .image-section-2 {
+            display: flex;
+            flex-direction: row;
+        }
+
         .image1,
-        .image2 {
+        .image2,
+        .image3,
+        .image4 {
             width: 100%;
-            max-width: 500px;
+            max-width: 400px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
@@ -24,6 +31,9 @@
             &:hover {
                 transform: scale(1.05);
             }
+        }
+        .image2, .image3 {
+            visibility: hidden;
         }
     }
 
@@ -99,8 +109,15 @@
         .imageSection {
             width: 100%;
             gap: 0;
-            .image1, .image2 {
+            .image4 {
+                max-width: 400px;
+                margin: 5px 0px;
+            }
+            .image1, .image4 {
                 border-radius: 0px;
+            }
+            .image2, .image3 {
+                display: none;
             }
         }
         .aboutusSection {

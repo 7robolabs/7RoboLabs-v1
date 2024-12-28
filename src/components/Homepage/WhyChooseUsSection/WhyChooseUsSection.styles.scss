@@ -1,9 +1,11 @@
 .whyChooseUsSection {
     background-color: #02132c;
     color: white;
-    background-image: url("../../../../public/images/image2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image:
+        url('../../../../public/images/image2.png'), url("../../../../public/images/image1.png");
+    background-position: top left, bottom left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 260px, 400px;
     display: flex;
     align-items: center;
     justify-content: space-around;

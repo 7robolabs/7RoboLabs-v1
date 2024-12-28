@@ -5,12 +5,30 @@ const AboutUsSection = () => {
   return (
     <div className="aboutUsContainer">
       <div className="imageSection">
-        <img className="image1" src="./images/robo-head.jpg" alt="Robot Head" />
-        <img
-          className="image2"
-          src="./images/robot2withkids.png"
-          alt="Robot with Kids"
-        />
+        <div className="image-section-1">
+          <img
+            className="image1"
+            src="./images/robo-head.jpg"
+            alt="Robot Head"
+          />
+          <img
+            className="image2"
+            src="./images/robo-head.jpg"
+            alt="Robot Head"
+          />
+        </div>
+        <div className="image-section-2">
+          <img
+            className="image3"
+            src="./images/robot2withkids.png"
+            alt="Robot with Kids"
+          />
+          <img
+            className="image4"
+            src="./images/robot2withkids.png"
+            alt="Robot with Kids"
+          />
+        </div>
       </div>
 
       <div className="aboutusSection">
