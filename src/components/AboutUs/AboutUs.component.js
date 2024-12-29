@@ -40,15 +40,15 @@ const AboutUs = () => {
           <ul>
             <li>
               <img src="./images/robothand1.png" alt="Icon" />
-              Who benefits from our robotics solutions?
+              <div className="headerTextChanges">Who benefits from our robotics solutions?</div>
             </li>
             <li>
               <img src="./images/robothand1.png" alt="Icon" />
-              How do we support growth and innovation?
+              <div className="headerTextChanges">How do we support growth and innovation?</div>
             </li>
             <li>
               <img src="./images/robothand1.png" alt="Icon" />
-              Our Vision for the Future of Robotics
+              <div className="headerTextChanges">Our Vision for the Future of Robotics</div>
             </li>
           </ul>
         </div>

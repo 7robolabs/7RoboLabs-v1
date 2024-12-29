@@ -34,6 +34,11 @@
         background-color: #02142c;
         color: white;
         padding: 40px;
+        background-image:
+                url('../../../public/images/image2.png'), url("../../../public/images/image1.png");
+        background-position: top left, bottom left;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 200px, 400px;
 
         &__content {
             max-width: 50%;
@@ -90,7 +95,11 @@
 
                     img {
                         margin-right: 10px;
-                        width: 80px;
+                        width: 70px;
+                    }
+                    .headerTextChanges {
+                        margin-top: 15px;
+                        font-size: 18px;
                     }
                 }
             }
