@@ -9,7 +9,7 @@ const ProfessionalShareholders = () => {
       <div className="shareholdersContainer">
         {SHARE_HOLDERS?.map((shareholder) => (
           <div className="shareholderCard" key={shareholder.id}>
-            <img src={"https://placehold.co/300x300"} alt={shareholder.name} />
+            <img className="profilePhotoImage" src={shareholder.profilePhoto} alt={shareholder.name} />
             <h2>{shareholder.name}</h2>
             <h4>{shareholder.role}</h4>
             <div className="linkedinIcon">
