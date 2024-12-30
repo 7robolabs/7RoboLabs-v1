@@ -1,40 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import NavItem from "../NavItem";
 import Footer from "../Footer";
+import emailjs from "@emailjs/browser";
 import "./ContactUs.styles.scss";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    number: "",
     message: "",
+    number: "",
   });
+  const form = useRef();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const sendMail = () => {
+  const sendMail = (e) => {
+    e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       alert("Please fill in all required fields.");
       return;
     }
-
-    const serviceID = "service_gj57uzq";
+  
+    const serviceID = "service_3a5vkip";
     const templateID = "template_8t8kwtm";
-    console.log("log the formData", formData);
-    alert("your form date successfully sent")
-    /**
-     * window?.emailjs
-      .send(serviceID, templateID, formData)
+    const publicKey = "dqWNR_vMqHB8K27EI";
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      number: formData.number,
+      message: formData.message,
+    };
+    emailjs
+      .send(serviceID, templateID, templateParams, publicKey)
       .then(() => {
         setFormData({ name: "", email: "", number: "", message: "" });
         alert("Your message has been sent successfully!");
       })
-      .catch((err) => console.error("Error sending message:", err));
-    */
+      .catch((err) => {
+        console.error("Error sending message:", err);
+        alert("Failed to send the message. Please try again.");
+      });
   };
 
   return (
@@ -125,7 +134,7 @@ const ContactUs = () => {
 
         <div className="contactFormContainer" data-aos="fade-left">
           <h3>Send Us a Message</h3>
-          <form className="contactForm">
+          <form className="contactForm" ref={form} onSubmit={sendMail}>
             <div className="formGroup">
               <input
                 type="text"
@@ -166,9 +175,7 @@ const ContactUs = () => {
               ></textarea>
             </div>
 
-            <button type="button" className="submitButton" onClick={sendMail}>
-              Submit
-            </button>
+            <input type="submit" className="submitButton" value="Send" />
           </form>
         </div>
       </section>

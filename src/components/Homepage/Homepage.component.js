@@ -15,7 +15,7 @@ const Homepage = () => {
       <div className="roboticsDescriptionContainer">
         <div className="roboticsDescription">
           <h2 className="mainHeader">
-            Robotics enables machines to perform tasks autonomously, enhancing
+            Robotics enables machines to perform tasks autonomously, <br/> enhancing
             efficiency.
           </h2>
           <p className="subHeader">Smart Solutions for Modern Challenges</p>
