@@ -24,10 +24,10 @@ const ContactUs = () => {
       alert("Please fill in all required fields.");
       return;
     }
-  
-    const serviceID = "service_3a5vkip";
-    const templateID = "template_8t8kwtm";
-    const publicKey = "dqWNR_vMqHB8K27EI";
+
+    const serviceID = process.env.REACT_APP_EMAIL_JS_SERVICE_ID;
+    const templateID = process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY;
     const templateParams = {
       name: formData.name,
       email: formData.email,
@@ -159,7 +159,7 @@ const ContactUs = () => {
               <input
                 type="tel"
                 name="number"
-                placeholder="Phone Number (optional)"
+                placeholder="Phone Number"
                 value={formData.number}
                 onChange={handleChange}
               />
