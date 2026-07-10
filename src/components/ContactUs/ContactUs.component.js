@@ -61,7 +61,7 @@ const ContactUs = () => {
           </div>
           <img
             className="heroImage"
-            src="./images/ahand.png"
+            src="./images/ChatGPT Image May 28, 2026, 07_06_24 PM.png"
             alt="Contact Us"
             data-aos="fade-left"
           />

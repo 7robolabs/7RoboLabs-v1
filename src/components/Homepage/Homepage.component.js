@@ -5,7 +5,6 @@ import AboutUsSection from "./AboutUsSection";
 import ServicesSection from "./ServicesSection";
 import WhyChooseUsSection from "./WhyChooseUsSection";
 import CaseStudiesSection from "./CaseStudiesSection";
-import ProfessionalShareholders from "./ProfessionalShareholders";
 import Footer from "../Footer";
 
 const Homepage = () => {
@@ -20,13 +19,12 @@ const Homepage = () => {
           </h2>
           <p className="subHeader">Smart Solutions for Modern Challenges</p>
         </div>
-        <img src="./images/robotics-image.png" alt="robotics-images" />
+        <img src="./images/ChatGPT Image May 28, 2026, 06_53_25 PM.png" alt="robotics-images" />
       </div>
       <AboutUsSection />
       <ServicesSection />
       <WhyChooseUsSection />
       <CaseStudiesSection />
-      <ProfessionalShareholders />
       <Footer />
     </div>
   );

@@ -7,23 +7,22 @@
     gap: 20px;
 
     .imageSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
         width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .image-section-1, .image-section-2 {
+        .image-section-1 {
+            width: 100%;
             display: flex;
-            flex-direction: row;
+            justify-content: center;
         }
 
-        .image1,
-        .image2,
-        .image3,
-        .image4 {
+        .image1 {
             width: 100%;
-            max-width: 400px;
+            max-width: 780px; // increased little bit width
+            height: 520px;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
@@ -32,21 +31,18 @@
                 transform: scale(1.05);
             }
         }
-        .image2, .image3 {
-            visibility: hidden;
-        }
     }
 
     .aboutusSection {
         width: 50%;
         max-width: 600px;
-        color: #02142C;
+        color: #02142c;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         .aboutTitle {
-            color: #2BE0F7;
+            color: #2be0f7;
             font-size: 18px;
             letter-spacing: 1px;
             font-weight: bold;
@@ -98,55 +94,57 @@
     }
 }
 
-// Responsiveness
 @media (max-width: 767px) {
     .aboutUsContainer {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        padding: 0px;
+        padding: 0;
         margin-top: 10px;
+
         .imageSection {
             width: 100%;
-            gap: 0;
-            .image4 {
-                max-width: 400px;
-                margin: 5px 0px;
-            }
-            .image1, .image4 {
-                border-radius: 0px;
-            }
-            .image2, .image3 {
-                display: none;
+
+            .image1 {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                border-radius: 0;
             }
         }
+
         .aboutusSection {
             width: 100%;
+
             .aboutTitle {
                 font-size: 21px;
             }
+
             .mainHeading {
                 line-height: 1.1;
             }
+
             .statisticItem {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 10px 0px;
+                margin: 10px 0;
+
                 .statImage {
-                    width: 100%;
+                    width: 100px;
+
                     img {
                         width: 100%;
-                        margin-right: 0px;
+                        margin-right: 0;
                     }
                 }
             }
         }
-    
+
         .mainHeading {
             font-size: 28px;
         }
-    
+
         .description {
             font-size: 14px;
         }

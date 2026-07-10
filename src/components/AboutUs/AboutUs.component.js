@@ -18,7 +18,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="about__image">
-          <img src="./images/ahand.png" alt="Robotics Hand" />
+          <img src="./images/ChatGPT Image May 28, 2026, 07_12_51 PM.png" alt="Robotics Hand" />
         </div>
       </section>
 
